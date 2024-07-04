@@ -1,0 +1,145 @@
+@import url('https://fonts.googleapis.com/css2?family=Krona+One&family=Montserrat:ital,wght@0,100..900;1,100..900&display=swap');
+
+:root {
+    --color-primario: #A0937D;
+    --color-secundario: #E7D4B5;
+    --color-terciario: #B6C7AA;
+    --color-hover: #B6C7AA;
+
+    --fuente-montserrat: "Montserrat", sans serif;
+    --fuente-krona: "krona", sans serif;
+}
+
+* {
+    padding: 0;
+    margin: 0;
+
+}
+
+body {
+    background-color: var(--color-primario);
+    color: var(--color-secundario);
+    box-sizing: border-box;
+}
+
+strong {
+    color: #22D4FD;
+}
+
+.header {
+    padding: 2% 0% 0% 15%;
+}
+
+.header__menu {
+    display: flex;
+    gap: 80px;
+}
+
+.header__menu__link {
+    font-family: var(--fuente-montserrat);
+    font-size: 1.5rem;
+    font-weight: 600;
+    color: #22D4FD;
+    text-decoration: none;
+}
+
+.presentacion {
+    display: flex;
+    align-items: center;
+    padding: 5% 15%;
+    justify-content: space-between;
+    gap: 82px;
+}
+
+.presentacion__contenido {
+    width: 50%;
+    display: flex;
+    flex-direction: column;
+    gap: 40px;
+}
+
+.presentacion__contenido__titulo {
+    font-size: 2.25rem;
+    font-family: var(--fuente-krona);
+}
+
+.tituloDestacado {
+    color: var(--color-terciario);
+}
+
+.presentacion__contenido__texto {
+    font-size: 1.5rem;
+    font-family: var(--fuente-montserrat);
+}
+
+.presentacion__enlaces {
+    display: flex;
+    justify-content: space-between;
+    flex-direction: column;
+    align-items: center;
+    gap: 32px;
+}
+
+.presentacion__enlaces__link {
+    width: 50%;
+    text-align: center;
+    padding: 21.5px 0px;
+    border-radius: 8px;
+    font-family: var(--fuente-montserrat);
+    font-size: 1.5rem;
+    font-weight: 600;
+    text-decoration: none;
+    color: #f6f6f6;
+    border: 5px solid #22D4FD;
+    display: flex;
+    justify-content: center;
+    gap: 16px;
+    
+}
+
+.presentacion__imagen {
+    width: 50%;
+}
+
+.presentacion__enlaces__link:hover { /* :hover colorea un boton al pasar el cursor por encima */
+    border: 2px solid #0000ff;
+    background-color: #272727;
+    cursor: pointer;
+    padding: 3%;
+
+}
+
+.presentacion__enlaces__subtitulos {
+    font-family: "krone One", sans-serif;
+    font-size: 1.5rem;
+    font-weight: 400;
+}
+
+.footer {
+    background-color: #B6C7AA;
+    padding: 24px;
+    text-align: center;
+    color: #000000;
+    font-family: "Montserrat", sans-serif;
+    font-size: 1.5rem;
+    font-weight: 400;
+}
+
+@media (max-width: 1200px) {
+    .header {
+        padding: 10%;
+    }
+
+    .header__menu {
+        justify-content: center;
+    }
+
+    .presentacion {
+        flex-direction: column-reverse;
+        padding: 5%;
+    }
+
+    .presentacion__contenido {
+        width: auto;
+    }
+}
